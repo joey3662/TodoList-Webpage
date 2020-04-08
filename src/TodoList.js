@@ -1,12 +1,13 @@
 import React, { Component, Fragment} from 'react';
 import './style.css';
+import TodoItem from './TodoItem'
 
 class TodoList extends Component{
   constructor(props){
     super(props);
     this.state= {
       inputValue: '',
-      list: []
+      list: ['123','222']
     }
   }
 
@@ -28,12 +29,15 @@ class TodoList extends Component{
               {
                 this.state.list.map((item, index) => {
                   return (
-                    <li
-                      key= {index}
-                      onClick = {this.handleItemDelte.bind(this, index)}
-                      dangerouslySetInnerHTML= {{__html: item}}
-                    >
-                    </li>
+                    <div>
+                      <TodoItem content = {item}/>
+                      {/*<li
+                        key= {index}
+                        onClick = {this.handleItemDelte.bind(this, index)}
+                        dangerouslySetInnerHTML= {{__html: item}}
+                        >
+                      </li>*/}
+                    </div>
                   )
                 })
               }
