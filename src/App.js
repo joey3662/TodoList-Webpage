@@ -1,26 +1,26 @@
+//import React,{ Component } from 'react';
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// the above line equals to
+// import React from 'react';
+// const Component=React.Component;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    //JSX=>needs to import React
+    <div >
+      Hello Worldfff
     </div>
   );
 }
 
 export default App;
+
+// class App extends Component {
+//   render(){
+//     return(
+//       <div >
+//         Hello World
+//       </div>
+//     );
+//   }
+// }
