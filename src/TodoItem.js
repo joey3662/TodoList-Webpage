@@ -23,8 +23,8 @@ class TodoItem extends Component {
 }
 // limit the input values from superclass (TodoList.js)
 TodoItem.propTypes= {
-  content: PropTypes.string,
+  content: PropTypes.string.isRequired,
   deleteItem: PropTypes.func,
-  index: PropTypes.number
+  index: PropTypes.arrayOf(PropTypes.number, PropTypes.string)
 }
 export default TodoItem;
